@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import logger from '../logger';
 
 import CrawlerService from '../services/CrawlerService';
 
@@ -16,8 +17,10 @@ crawlersRouter.post('/', async (request, response) => {
 
     const crawler = await crawlerService.execute({ url, limit });
 
+    logger.info(`${limit} produtos coletados com sucesso.`);
     return response.status(200).json(crawler);
   } catch (err) {
+    logger.error({ error: err.message });
     return response.status(400).json({ error: err.message });
   }
 });
