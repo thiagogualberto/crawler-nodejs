@@ -20,7 +20,7 @@
 </br></br>
 
 <p id="insomniaButton" align="center">
-    <a href="" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+    <a href="https://insomnia.rest/run/?label=Insomnia_CrawlerNodeJS&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fthiagogualberto%2Fcrawler-nodejs%2Fmaster%2FInsomnia_CrawlerNodeJS.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </p>
 
 <p align="center">
@@ -61,57 +61,24 @@ $ yarn dev:server
 ```
 
 You can test this API in two ways:</br>
-* Import the `Insomnia_GoBarber.json` file into Insomnia or,
+* Import the `Insomnia_CrawlerNodeJS.json` file into Insomnia or,
 * Click the button [Run in Insomnia](#insomniaButton)
 </br></br>
 
 # :clipboard: Features
 
-## Funcionalities
-* User authentication with JWT
-* User registration (Create, Read, Update and Delete)
-* Sending files (User avatar)
-* Schedules
-  * List of service providers
-  * Service scheduling
-  * Validation of appointments
-  * Listing user schedules
-  * Pagination
-  * Listing provider's agenda
-* Sending notifications
-  * Notifying new appointments
-  * Listing user notifications
-  * Mark notifications as read
-* Cancellation and sending email
-  * Cancellation of scheduling
-  * Listing available times
-
 ## Build with (Technologies)
 
 This project was developed with the following technologies:
-* [Bcrypt](https://www.npmjs.com/package/bcrypt) - Generation of User Password Hash
-* [Bee Queue](https://github.com/bee-queue/bee-queue) - Redis-backed job queue for Node.js.
-* [date-fns](https://date-fns.org/) - JavaScript date utility library
-* [Docker](https://www.docker.com/docker-community) - Container
-* [DotEnv](https://www.npmjs.com/package/dotenv) - Loads environment variables
+* [Cheerio](https://cheerio.js.org/) - Lib Cherrio to help create the Crawler
 * [EditorConfig](https://editorconfig.org/) - Setting up the development environment
 * [ESLint](https://eslint.org/) - JS Linter and code style
 * [Express](https://expressjs.com/pt-br/) - Router of the Application
-* [JWT](https://jwt.io/) - Authentication Json Web Token
-* [MongoDB](https://www.mongodb.com/) - Database
-* [Mongoose](https://mongoosejs.com/) - Object Modeling + DB Connector
-* [Multer](https://github.com/expressjs/multer) - File Upload
-* [Nodemailer](https://nodemailer.com/about/) - Used to send emails
-* [Nodemon](https://nodemon.io/) - Process Manager used in the development
 * [Node.js](https://nodejs.org/en/) - Build the server
-* [PostgreSQL](https://www.postgresql.org/) - Database
+* [Pino](https://github.com/pinojs/pino) + [Pino-HTTP](https://yarnpkg.com/package/pino-http) + [Pino-Pretty](https://yarnpkg.com/package/pino-pretty) - Log handling
 * [Prettier](https://prettier.io/) - Code Formatter
-* [Redis](https://redis.io/) - Database
-* [Sequelize](https://sequelize.org/) - Promise-based Node.js ORM for Postgres
-* [Sucrase](https://github.com/alangpierce/sucrase) - Setting up the development environment
-* [VS Code](https://code.visualstudio.com/) with [Sucrase](https://github.com/alangpierce/sucrase) + [Nodemon](https://nodemon.io/) + [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) + [EditorConfig](https://editorconfig.org/) + [Sequelize](https://sequelize.org/)
-* [Youch](https://www.npmjs.com/package/youch) - Pretty error reporting for Node.js
-* [Yup](https://www.npmjs.com/package/yup) - Validate the application's JSON fields.
+* [TypeScript](https://www.typescriptlang.org/)
+* [VS Code](https://code.visualstudio.com/) with [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) + [EditorConfig](https://editorconfig.org/) + [Sequelize](https://sequelize.org/)
 </br></br>
 
 # :thinking: Contribution
